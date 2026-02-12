@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hi, i'm mason | enjoying life</title>
+    <title>Your Name | Developer Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
@@ -144,4 +144,131 @@
             padding: 30px;
             border-radius: 12px;
             transition: 0.3s;
-            /* Subtle shadow for depth on white
+            /* Subtle shadow for depth on white background */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            border-color: var(--accent);
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: var(--text-main);
+        }
+
+        .project-card p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .project-links a {
+            margin-right: 15px;
+            font-size: 0.9rem;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            color: var(--text-secondary);
+            border-top: 1px solid #e5e7eb;
+            margin-top: 50px;
+        }
+
+        .social-links {
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: var(--text-secondary);
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">dev.portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>Hi, I'm <br> <span>Your Name.</span></h1>
+            <p>I build things for the web. I'm a software engineer based in New York specializing in building exceptional digital experiences.</p>
+            <a href="#projects" class="btn">Check out my work</a>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid">
+                
+                <div class="project-card">
+                    <h3>Project Name 1</h3>
+                    <p>A brief description of what this project does. Mention the tech stack used like React, Node.js, or Python.</p>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project Name 2</h3>
+                    <p>Description of the second project. Keep it concise but descriptive. Highlight the problem it solves.</p>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project Name 3</h3>
+                    <p>Description of the third project. This grid will auto-adjust based on screen size.</p>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2024 Your Name. Built with pure HTML/CSS.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
